@@ -1,0 +1,10 @@
+
+Usage: github-repos [options]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+         --token [token]       Github personal access token.
+         --interval [ms]       Poll interval (in milliseconds).
+

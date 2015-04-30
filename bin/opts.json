@@ -1,0 +1,18 @@
+{
+	"string": [
+		"token",
+		"interval"
+	],
+	"boolean": [
+		"help",
+		"version"
+	],
+	"alias": {
+		"help": [
+			"h"
+		],
+		"version": [
+			"V"
+		]
+	}
+}

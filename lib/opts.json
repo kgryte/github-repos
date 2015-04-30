@@ -1,0 +1,13 @@
+{
+	"uri": "https://api.github.com/user/repos",
+	"headers": {
+		"User-Agent": "https://github.com/kgryte/github-repos",
+		"Accept": "application/vnd.github.moondragon+json",
+		"Authorization": ""
+	},
+	"qs": {
+		"page": 1,
+		"per_page": 100
+	},
+	"all": true
+}

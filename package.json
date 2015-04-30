@@ -1,7 +1,7 @@
 {
   "name": "@kgryte/github-repos",
   "version": "0.0.0",
-  "description": "Returns all Github repositories to which a user has access.",
+  "description": "Queries Github for all top-level repository data to which a user has access.",
   "author": {
     "name": "Athan Reines",
     "email": "kgryte@gmail.com"
@@ -18,22 +18,47 @@
     "coveralls": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --dir ./reports/coveralls/coverage --report lcovonly -- -R spec && cat ./reports/coveralls/coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./reports/coveralls"
   },
   "main": "./lib",
+  "bin": {
+    "github-repos": "./bin/cli"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/kgryte/github-repos.git"
   },
-  "keywords": [],
+  "keywords": [
+    "github",
+    "git",
+    "gh",
+    "get",
+    "request",
+    "api",
+    "query",
+    "poll",
+    "repos",
+    "repositories",
+    "cli",
+    "util",
+    "utility"
+  ],
   "bugs": {
     "url": "https://github.com/kgryte/github-repos/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@kgryte/github-get": "^2.0.0",
+    "minimist": "^1.1.1",
+    "utils-merge2": "^1.0.0",
+    "validate.io-object": "^1.0.3",
+    "validate.io-positive": "^1.0.0",
+    "validate.io-string-primitive": "^1.0.0"
+  },
   "devDependencies": {
     "chai": "2.x.x",
-    "mocha": "2.x.x",
     "coveralls": "^2.11.1",
     "istanbul": "^0.3.0",
     "jshint": "2.x.x",
-    "jshint-stylish": "^1.0.0"
+    "jshint-stylish": "^1.0.0",
+    "mocha": "2.x.x",
+    "nock": "^1.7.1"
   },
   "licenses": [
     {
