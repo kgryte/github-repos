@@ -1,6 +1,6 @@
 {
   "name": "@kgryte/github-repos",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Queries Github for all top-level repository data to which a user has access.",
   "author": {
     "name": "Athan Reines",
